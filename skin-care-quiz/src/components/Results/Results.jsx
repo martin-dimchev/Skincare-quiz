@@ -8,7 +8,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const NextArrow = ({ onClick, currentSlide, slideCount, slidesToShow }) => {
-  // Hide next arrow if on last page
   if (currentSlide >= slideCount - slidesToShow) return null;
 
   return (
@@ -19,7 +18,6 @@ const NextArrow = ({ onClick, currentSlide, slideCount, slidesToShow }) => {
 };
 
 const PrevArrow = ({ onClick, currentSlide }) => {
-  // Hide prev arrow if on first page
   if (currentSlide === 0) return null;
 
   return (
@@ -102,7 +100,6 @@ function Results() {
     return <div className="error">{error}</div>;
   }
 
-  // Calculate total slides = filtered products + 1 dummy card
   const totalSlides = filteredProducts.length + 1;
 
   return (

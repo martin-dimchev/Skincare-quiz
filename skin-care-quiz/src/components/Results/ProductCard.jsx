@@ -3,8 +3,6 @@ import './ProductCard.css';
 
 function ProductCard({ product }) {
     const productId = product.id.toString();
-
-    // Load initial wishlist state from localStorage
     const getInitialWishlist = () => {
         const stored = localStorage.getItem('wishlist') || '[]';
         const wishlistArray = JSON.parse(stored);
@@ -14,17 +12,15 @@ function ProductCard({ product }) {
     const [wishlisted, setWishlisted] = useState(getInitialWishlist);
 
     useEffect(() => {
-        // Update localStorage when wishlisted changes
+
         const stored = localStorage.getItem('wishlist') || '[]';
         let wishlistArray = JSON.parse(stored);
 
         if (wishlisted) {
-            // Add if not already in list
             if (!wishlistArray.includes(productId)) {
                 wishlistArray.push(productId);
             }
         } else {
-            // Remove if exists
             wishlistArray = wishlistArray.filter(id => id !== productId);
         }
         localStorage.setItem('wishlist', JSON.stringify(wishlistArray));
@@ -42,16 +38,16 @@ function ProductCard({ product }) {
         <div className="product-card">
             <div className="product-image-container">
                 {image ? (
-                    <img 
-                        src={image} 
+                    <img
+                        src={image}
                         alt={product.title}
                         className="product-image"
                     />
                 ) : (
                     <div className="no-image">No Image</div>
                 )}
-                <div 
-                    className={`heart-icon ${wishlisted ? 'wishlisted' : ''}`} 
+                <div
+                    className={`heart-icon ${wishlisted ? 'wishlisted' : ''}`}
                     onClick={toggleWishlist}
                     role="button"
                     aria-label={wishlisted ? 'Remove from wishlist' : 'Add to wishlist'}

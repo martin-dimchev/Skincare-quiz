@@ -13,16 +13,16 @@ function Quiz() {
 
     const handleSelect = (answer) => {
         setAnswers(prev => {
-          if (prev[current] === answer) {
-            const { [current]: removed, ...rest } = prev;
-            return rest;
-          }
-          return {
-            ...prev,
-            [current]: answer,
-          };
+            if (prev[current] === answer) {
+                const { [current]: removed, ...rest } = prev;
+                return rest;
+            }
+            return {
+                ...prev,
+                [current]: answer,
+            };
         });
-      };
+    };
 
     const handleBack = () => {
         if (current > 1) {
@@ -39,7 +39,7 @@ function Quiz() {
     };
 
     if (current > quizData.length) {
-        navigate('/results', {state: {answers: answers}})
+        navigate('/results', { state: { answers: answers } })
     }
 
     const { question, options } = quizData[current - 1];
