@@ -33,7 +33,7 @@ function Quiz() {
     };
 
     if (current > quizData.length) {
-        return <div>Thanks! Your routine is being prepared...</div>;
+        navigate('/results', {state: {answers: answers}})
     }
 
     const { question, options } = quizData[current - 1];

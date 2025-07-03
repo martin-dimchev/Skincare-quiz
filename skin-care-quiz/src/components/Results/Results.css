@@ -1,0 +1,128 @@
+.results-container {
+    background-color: white;
+}
+.results-heading {
+    padding: 0 30%;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 70px 0;
+}
+
+.banner {
+    text-align: center;
+    background-image: url(../../assets/results-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.retake-btn {
+    padding: 0.5rem 2.8rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+.retake-btn:hover {
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.product-grid {
+    background-color: white;
+}
+
+.results-content {
+    background-color: white;
+}
+
+
+.results-content {
+    margin-top:-45px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: transparent;
+}
+
+
+.slick-slide > div {
+    height: 100%;
+    margin: 0 10px;
+}
+
+.slick-dots {
+    background-color: white;
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li button:nth-child(-n+3) {
+    display: inline-block;
+  }
+
+.slick-slide > div > * {
+    height: 100%;
+}
+
+
+.custom-arrow {
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #EEF7FB;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    color: black;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.custom-arrow svg{
+    vertical-align: middle;
+}
+
+.custom-arrow:hover {
+    opacity: 1;
+}
+
+.next-arrow {
+    right: -45px;
+    color: white;
+}
+
+.prev-arrow {
+    left: -45px;
+    color: white;
+}
+
+
+.dummy-card div{
+    color: #000;
+    font-size: 12px;
+    padding: 20px;
+    background-color: #d9f4ff;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.dummy-info {
+  padding: 25px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dummy-info h6 {
+    font-size: 1.8rem;
+    margin: 0;
+}

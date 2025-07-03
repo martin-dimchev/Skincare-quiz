@@ -4,7 +4,7 @@ function Question({ question, options, current, answers, onSelect }) {
     return (
         <>
             <div className='quiz-item'>
-                <h1 className="question">{question}</h1>
+                <h2 className="question">{question}</h2>
 
                 <div className="options">
                     {options.map((opt, idx) => (
