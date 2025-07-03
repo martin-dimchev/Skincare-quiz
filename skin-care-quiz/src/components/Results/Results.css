@@ -1,6 +1,7 @@
 .results-container {
     background-color: white;
 }
+
 .results-heading {
     padding: 0 30%;
 }
@@ -28,7 +29,7 @@
 
 .retake-btn:hover {
     border: 1px solid white;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .product-grid {
@@ -41,14 +42,14 @@
 
 
 .results-content {
-    margin-top:-45px;
+    margin-top: -45px;
     margin-left: 20%;
     margin-right: 20%;
     background-color: transparent;
 }
 
 
-.slick-slide > div {
+.slick-slide>div {
     height: 100%;
     margin: 0 10px;
 }
@@ -63,9 +64,9 @@
 
 .slick-dots li button:nth-child(-n+3) {
     display: inline-block;
-  }
+}
 
-.slick-slide > div > * {
+.slick-slide>div>* {
     height: 100%;
 }
 
@@ -84,7 +85,7 @@
     transition: opacity 0.3s ease;
 }
 
-.custom-arrow svg{
+.custom-arrow svg {
     vertical-align: middle;
 }
 
@@ -103,7 +104,7 @@
 }
 
 
-.dummy-card div{
+.dummy-card div {
     color: #000;
     font-size: 12px;
     padding: 20px;
@@ -114,12 +115,12 @@
 }
 
 .dummy-info {
-  padding: 25px;
-  font-size: 14px;
-  color: #333;
-  line-height: 1.5;
-  flex-grow: 1;
-  height: 100%;
+    padding: 25px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    flex-grow: 1;
+    height: 100%;
 }
 
 .dummy-info h6 {

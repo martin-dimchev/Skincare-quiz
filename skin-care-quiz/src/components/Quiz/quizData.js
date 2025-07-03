@@ -17,7 +17,7 @@ const quizData = [
     {
       id: 4,
       question: "Is there any troubling you about your hair?",
-      options: ['a. Braekage', 'b. Frizz', 'c. Scalp dryness', 'd. Damage', 'e. Tangling']
+      options: ['a. Breakage', 'b. Frizz', 'c. Scalp dryness', 'd. Damage', 'e. Tangling']
     },
     {
       id: 5,
