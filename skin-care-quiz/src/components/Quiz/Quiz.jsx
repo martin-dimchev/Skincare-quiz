@@ -45,7 +45,7 @@ function Quiz() {
     const { question, options } = quizData[current - 1];
 
     return (
-        <>
+        <div className="quiz">
             <div className="quiz-container">
                 <Question question={question} options={options} current={current} answers={answers} onSelect={handleSelect} />
                 <div className="nav-buttons ">
@@ -74,7 +74,7 @@ function Quiz() {
                     })}
                 />
             </div>
-        </>
+        </div>
     );
 }
 

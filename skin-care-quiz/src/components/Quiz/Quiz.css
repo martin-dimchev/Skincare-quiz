@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 30px;
 }
 
 .back {
@@ -78,4 +79,37 @@
     width: 100px;
     height: 100px;
     
+}
+
+
+@media (max-width: 730px) {
+    .quiz-container {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .question {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .options {
+        padding: 0 30px;
+    }
+
+    .progress-bar-container {
+        margin: 30px auto;
+        position: unset;
+        width: 75px;
+        height: 75px;
+    }
+
+    .quiz {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-buttons {
+        margin: 30px 15px;
+    }
 }

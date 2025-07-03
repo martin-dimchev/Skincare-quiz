@@ -127,3 +127,23 @@
     font-size: 1.8rem;
     margin: 0;
 }
+
+@media (max-width: 730px) {
+    .results-heading {
+        padding: 0 5%;
+    }
+
+    .results-heading h1 {
+        font-size: 3.1rem;
+    }
+
+    .results-content {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .custom-arrow svg{
+        width: 20px;
+        height: 20px;
+    }
+}
