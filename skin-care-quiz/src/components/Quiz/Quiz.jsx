@@ -12,11 +12,17 @@ function Quiz() {
     const [answers, setAnswers] = useState({});
 
     const handleSelect = (answer) => {
-        setAnswers(prev => ({
+        setAnswers(prev => {
+          if (prev[current] === answer) {
+            const { [current]: removed, ...rest } = prev;
+            return rest;
+          }
+          return {
             ...prev,
             [current]: answer,
-        }));
-    };
+          };
+        });
+      };
 
     const handleBack = () => {
         if (current > 1) {
@@ -49,7 +55,7 @@ function Quiz() {
                             Next question →
                         </button>
                     ) : (
-                        <button className="next" onClick={() => setCurrent(current + 1)} disabled={!answers[current]}>
+                        <button className="next" onClick={() => setCurrent(current + 1)}>
                             Discover your results
                         </button>
                     )}
