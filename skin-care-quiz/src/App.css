@@ -19,6 +19,13 @@ body, html, #root {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
+.home {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  height: 100vh;
+}
+
 .main-content {
   color: white;
   text-align: center;
